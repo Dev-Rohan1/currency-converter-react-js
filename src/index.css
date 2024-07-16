@@ -1,0 +1,156 @@
+/* =========== import google font - (Poppins) =========== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ========== universel css ============ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+/* =========== body css ============ */
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: url(./assets/bg.png), #030728;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ========= currency converter css ========= */
+.currency-converter {
+  width: 350px;
+  background: rgba(2, 7, 40, 0.5);
+  color: #fff;
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+}
+.currency-converter .currency-title {
+  font-size: 26px;
+  font-weight: 600;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.currency-converter .currency-form {
+  margin-top: 15px;
+}
+
+.currency-converter .currency-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.currency-converter .currency-form input {
+  width: 100%;
+  height: 45px;
+  background: rgba(2, 7, 40, 0.5);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(30px);
+  outline: none;
+  border-radius: 7px;
+  padding: 0px 10px;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form .select-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.select-box .select-label label {
+  font-size: 16px;
+  font-weight: 400;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select-box .select-item {
+  background: rgba(2, 7, 40, 0.5);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 2px 10px;
+}
+
+.select-box .select-item img {
+  width: 26px;
+  margin-right: 1px;
+}
+
+.select-box .select-item select {
+  background: none;
+  border: 0;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  outline: 0;
+}
+
+.select-box .select-item select option {
+  color: #000;
+}
+
+.select-section .swap-icon {
+  background: rgba(2, 7, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.currency-converter form .exchange-btn {
+  width: 100%;
+  height: 45px;
+  border: 0;
+  outline: 0;
+  margin-top: 25px;
+  border-radius: 7px;
+  text-transform: capitalize;
+  font-size: 17px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.currency-converter form .exchange-btn:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.currency-converter form .exchange-btn.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.currency-converter form .exchange-rate-result {
+  width: 100%;
+  background: rgba(2, 7, 40, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 7px;
+  margin-top: 20px;
+  text-align: center;
+  padding: 13px 10px;
+}
